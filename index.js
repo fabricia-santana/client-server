@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 consign().include('utils').include('routes').into(app);
 
-app.listen(3000, '127.0.0.1', ()=>{
+app.listen(3000, process.env.PORT, ()=>{
 
     console.log('servidor rodando!');
 })
